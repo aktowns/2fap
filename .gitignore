@@ -2,3 +2,5 @@
 *.d
 build/
 .DS_Store
+main.elf
+main.hex
