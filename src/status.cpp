@@ -26,6 +26,9 @@ void set_status(LED_STATUS stat) {
         case YELLOW:
             set_multicoloured(LOW, HIGH, HIGH);
             break;
+        case PURPLE:
+            set_multicoloured(HIGH, LOW, HIGH);
+            break;
         default:
             set_multicoloured(LOW, LOW, LOW);
             break;
