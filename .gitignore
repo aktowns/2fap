@@ -4,3 +4,4 @@ build/
 .DS_Store
 main.elf
 main.hex
+.idea/workspace.xml
