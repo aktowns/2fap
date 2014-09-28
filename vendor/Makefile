@@ -28,8 +28,8 @@ OBJCOPY = $(abspath $(COMPILERPATH))/arm-none-eabi-objcopy
 SIZE = $(abspath $(COMPILERPATH))/arm-none-eabi-size
 
 # automatically create lists of the sources and objects
-C_FILES := $(wildcard *.c)
-CPP_FILES := $(wildcard *.cpp) $(wildcard ../*.cpp)
+C_FILES := $(wildcard *.c) $(wildcard ../src/*.c)
+CPP_FILES := $(wildcard *.cpp) $(wildcard ../src/*.cpp)
 OBJS := $(C_FILES:.c=.o) $(CPP_FILES:.cpp=.o)
 
 # the actual makefile rules (all .o files built by GNU make's default implicit rules)
